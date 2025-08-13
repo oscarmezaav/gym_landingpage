@@ -272,3 +272,83 @@ header .logo {
 .swiper .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--primary);
 }
+
+/* Content */
+.banner .content {
+    position: absolute;
+    z-index: 100;
+    max-width: 440px;
+    left: 53%;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    transition: 0.5s;
+}
+
+.banner .content.active {
+    transform: translateY(-50%) scale(0);
+}
+
+.banner .content h2 {
+    font-size: 3.5em;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner .content p {
+    text-align: end;
+    color: var(--primary);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.banner .content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: var(--primary);
+    padding: 10px 20px;
+    border: 1px solid var(--primary);
+    transition: 0.3s;
+}
+
+.banner .content a:hover {
+    color: var(--primary);
+    background: transparent;
+}
+
+.banner .title-left {
+    font-family: 'Berkshire Swash', cursive;
+    text-transform: uppercase;
+    line-height: 1em;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%) rotateZ(90deg);
+    left: 120px;
+    font-size: 4.5em;
+    letter-spacing: 6px;
+    color: var(--primary);
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.banner .title-right {
+    font-family: 'Berkshire Swash', cursive;
+    text-transform: uppercase;
+    line-height: 1em;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    font-size: 4.5em;
+    letter-spacing: 2px;
+    color: var(--primary);
+    opacity: 0.1;
+    z-index: 1;
+}
